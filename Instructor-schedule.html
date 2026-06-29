@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instructor Schedule - Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Instructor Portal - Welcome, Dr. Smith</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="instructor-login.html">Logout</a> |
+        <a href="session-enrollment.html">Session Enrollment</a>
+    </nav>
+
+    <div class="container" style="max-width: 800px;">
+        <h2>Your Assigned Teaching Schedule</h2>
+        <p>Click on a "View Roster" link to view the enrolled students for that session.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Title</th>
+                    <th>Modality</th>
+                    <th>Time / Days</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CS-101</td>
+                    <td>Introduction to Computer Science</td>
+                    <td>In-Person</td>
+                    <td>MWF 10:00 AM - 11:00 AM</td>
+                    <td><a href="session-enrollment.html?course=CS101">View Roster</a></td>
+                </tr>
+                <tr>
+                    <td>CS-302</td>
+                    <td>Database Management Systems</td>
+                    <td>Online Asynchronous</td>
+                    <td>N/A</td>
+                    <td><a href="session-enrollment.html?course=CS302">View Roster</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
