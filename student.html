@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration - Online Course Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Online Course Registration System</h1>
+    <p>Student Registration Portal</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="courses.html">Course Search</a> |
+    <a href="student.html">Student Registration</a> |
+    <a href="instructor-login.html">Instructor Login</a>
+</nav>
+
+<div class="container" style="max-width:900px;">
+
+    <h2>Student Registration Dashboard</h2>
+
+    <p>
+        Welcome to the Student Registration Portal. This system allows students to
+        securely access their academic records, review their current class schedule,
+        search for available courses, and register for upcoming semesters. Students
+        should verify course prerequisites and seat availability before completing
+        registration.
+    </p>
+
+    <hr>
+
+    <h3>Student Login</h3>
+
+    <form>
+
+        <div class="form-group">
+            <label for="studentID">Student ID</label>
+            <input type="text" id="studentID" placeholder="Example: V00987654" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+        </div>
+
+        <button type="submit">Sign In</button>
+
+    </form>
+
+    <hr>
+
+    <h3>Student Information</h3>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>John Anderson</td>
+        </tr>
+        <tr>
+            <th>Student ID</th>
+            <td>V00987654</td>
+        </tr>
+        <tr>
+            <th>Major</th>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <th>Classification</th>
+            <td>Junior</td>
+        </tr>
+        <tr>
+            <th>Academic Advisor</th>
+            <td>Dr. Emily Carter</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>Current Schedule</h3>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>Course</th>
+            <th>Course Title</th>
+            <th>Instructor</th>
+            <th>Credits</th>
+            <th>Status</th>
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <td>CS-101</td>
+            <td>Introduction to Computer Science</td>
+            <td>Dr. Smith</td>
+            <td>3</td>
+            <td>Registered</td>
+        </tr>
+
+        <tr>
+            <td>MATH-201</td>
+            <td>Calculus II</td>
+            <td>Dr. Wilson</td>
+            <td>4</td>
+            <td>Registered</td>
+        </tr>
+
+        <tr>
+            <td>ENG-210</td>
+            <td>Technical Writing</td>
+            <td>Prof. Brown</td>
+            <td>3</td>
+            <td>Registered</td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <h3>Available Courses</h3>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>Course</th>
+            <th>Instructor</th>
+            <th>Modality</th>
+            <th>Seats Available</th>
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        <tr>
+            <td>CS-302 Database Management Systems</td>
+            <td>Dr. Smith</td>
+            <td>Online</td>
+            <td>8</td>
+        </tr>
+
+        <tr>
+            <td>CS-350 Software Engineering</td>
+            <td>Dr. Johnson</td>
+            <td>In-Person</td>
+            <td>5</td>
+        </tr>
+
+        <tr>
+            <td>IT-210 Network Fundamentals</td>
+            <td>Prof. Davis</td>
+            <td>Hybrid</td>
+            <td>12</td>
+        </tr>
+
+        </tbody>
+
+    </table>
+
+    <hr>
+
+    <h3>Register for a Course</h3>
+
+    <div class="form-group">
+
+        <label>Select Course</label>
+
+        <select>
+
+            <option>Select a Course</option>
+            <option>CS-302 Database Management Systems</option>
+            <option>CS-350 Software Engineering</option>
+            <option>IT-210 Network Fundamentals</option>
+
+        </select>
+
+    </div>
+
+    <button>Register Course</button>
+
+    <button>Drop Course</button>
+
+    <hr>
+
+    <h3>Registration Notifications</h3>
+
+    <ul>
+
+        <li>Registration requests are processed immediately upon submission.</li>
+
+        <li>Students cannot register for the same course more than once.</li>
+
+        <li>Registration is blocked if a course has reached maximum enrollment.</li>
+
+        <li>Prerequisites must be completed before enrolling in advanced courses.</li>
+
+        <li>The maximum course load for a full-time undergraduate student is 18 credit hours.</li>
+
+    </ul>
+
+    <hr>
+
+    <h3>Registration Summary</h3>
+
+    <table>
+
+        <tr>
+            <th>Total Registered Courses</th>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <th>Total Credit Hours</th>
+            <td>10</td>
+        </tr>
+
+        <tr>
+            <th>Registration Status</th>
+            <td>Good Standing</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
