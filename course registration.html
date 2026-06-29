@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Course Search</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="course-search.html">Course Search</a>
+        <a href="student-registration.html">Student Registration</a>
+        <a href="instructor-schedule.html">Instructor Schedule</a>
+        <a href="session-enrollment.html">Session Enrollment</a>
+    </nav>
+</header>
+
+<div class="search-container">
+    <h2>Find a Course</h2>
+    
+    <input
+        type="text"
+        id="searchInput"
+        onkeyup="searchCourse()"
+        placeholder="Department, Instructor, or Course Number">
+
+    <button onclick="searchCourse()">
+        Search
+    </button>
+
+    <table id="results">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Credits</th>
+                <th>Instructor</th>
+                <th>Prerequisite</th>
+                <th>Modality</th>
+                <th>Enrollment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>INFO 465</td>
+                <td>3</td>
+                <td>Dr. Smith</td>
+                <td>INFO 360</td>
+                <td>In Person</td>
+                <td>30/35</td>
+            </tr>
+            <tr>
+                <td>INFO 364</td>
+                <td>3</td>
+                <td>Dr. Jones</td>
+                <td>INFO 160</td>
+                <td>Online</td>
+                <td>25/30</td>
+            </tr>
+            <tr>
+                <td>INFO 202</td>
+                <td>3</td>
+                <td>Dr. Brown</td>
+                <td>None</td>
+                <td>Hybrid</td>
+                <td>18/25</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="search.js"></script>
+
+</body>
+</html>
